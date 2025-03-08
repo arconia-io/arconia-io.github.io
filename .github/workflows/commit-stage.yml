@@ -2,8 +2,6 @@ name: Publish to GitHub Pages
 on:
   push:
     branches: [main]
-  repository_dispatch:
-    types: [docs-update]
   workflow_dispatch:
 
 concurrency:
