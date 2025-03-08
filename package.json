@@ -4,9 +4,9 @@
   "description": "Arconia documentation website",
   "scripts": {
     "build:docs": "antora antora-playbook.yml",
-    "build:site": "mkdir -p build/serve/docs && mv build/site/* build/serve/docs/ && cp -r website/* build/serve/ && rmdir build/site",
+    "build:site": "cp -r landing/* build/website/",
     "build": "npm run clean && npm run build:docs && npm run build:site",
-    "serve": "npx serve build/serve",
+    "open": "open build/website/index.html",
     "clean": "rm -rf build"
   },
   "devDependencies": {

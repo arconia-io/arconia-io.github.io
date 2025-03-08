@@ -12,8 +12,10 @@ content:
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
-    snapshot: true
   supplemental_files: ./supplemental-ui
 urls:
   latest_version_segment: latest
   html_extension_style: indexify
+output:
+  clean: true
+  dir: ./build/website/docs
