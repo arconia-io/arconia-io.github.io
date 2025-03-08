@@ -32,11 +32,8 @@ jobs:
         node-version: '22'
     - name: Install Antora
       run: npm ci
-    - name: Generate Site
-      run: npx antora antora-playbook.yml
-    - name: Copy Landing Page to Website
-      run: |
-        cp landing/* build/website/
+    - name: Build Website
+      run: npm build
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
       with:
