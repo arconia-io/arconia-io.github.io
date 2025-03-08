@@ -1,6 +1,5 @@
 site:
   title: Arconia
-  start_page: arconia::index.adoc
 
 content:
   sources:

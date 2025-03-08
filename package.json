@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Arconia documentation website",
   "scripts": {
-    "build:docs": "antora antora-playbook.yml",
+    "build:docs": "antora antora-playbook.yml --fetch",
     "build:site": "cp -r landing/* build/website/",
     "build": "npm run clean && npm run build:docs && npm run build:site",
     "open": "open build/website/index.html",
