@@ -1,0 +1,25 @@
+<div class="navbar-brand">
+  <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">
+    <img src="{{{uiRootPath}}}/img/arconia-logo.png" alt="{{site.title}}">
+    <span class="navbar-title">{{site.title}}</span>
+  </a>
+  <button class="navbar-burger" data-target="topbar-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+<div id="topbar-nav" class="navbar-menu">
+  <div class="navbar-end">
+    <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}">Home</a>
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link" href="#">Projects</a>
+      <div class="navbar-dropdown">
+        <a class="navbar-item" href="#">Arconia CLI</a>
+        <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}/docs/arconia/latest/index.html">Arconia Framework</a>
+      </div>
+    </div>
+    <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}/docs/arconia/latest/index.html">Documentation</a>
+    <a class="navbar-item" href="https://github.com/arconia-io" target="_blank">GitHub</a>
+  </div>
+</div>

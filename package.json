@@ -1,0 +1,16 @@
+{
+  "name": "arconia-website",
+  "version": "1.0.0",
+  "description": "Arconia documentation website",
+  "scripts": {
+    "build:docs": "antora antora-playbook.yml",
+    "build:site": "mkdir -p build/serve/docs && mv build/site/* build/serve/docs/ && cp -r website/* build/serve/ && rmdir build/site",
+    "build": "npm run clean && npm run build:docs && npm run build:site",
+    "serve": "npx serve build/serve",
+    "clean": "rm -rf build"
+  },
+  "devDependencies": {
+    "antora": "3.1.10",
+    "serve": "^14.2.1"
+  }
+}

@@ -1,0 +1,277 @@
+/* Custom CSS for Arconia Documentation */
+
+/* Import the same fonts used in the website */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+/* Define color variables to match the website */
+:root {
+    --primary-color: #9c8f7f;
+    --secondary-color: #5d5a56;
+    --text-color: #2c2a28;
+    --background-color: #e8e4dc;
+    --card-background: #f5f2eb;
+    --card-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --header-gradient: linear-gradient(135deg, #9c8f7f 0%, #5d5a56 100%);
+    --border-color: #c5bdb3;
+    --arch-color: #5d5a56;
+}
+
+/* Override body styles */
+body {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+.navbar {
+    background: var(--header-gradient);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand .navbar-item {
+    color: white;
+}
+
+.navbar-brand .navbar-item img {
+    max-height: 2.5rem;
+}
+
+.navbar-brand .navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-menu {
+    background: var(--header-gradient);
+}
+
+.navbar-menu .navbar-item {
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-menu .navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main content styling */
+.doc {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+h1.page {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+h1.page:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+/* Sidebar styling */
+.nav-menu {
+    background-color: var(--card-background);
+    border-right: 1px solid var(--border-color);
+}
+
+.nav-list {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-item {
+    color: var(--text-color);
+}
+
+.nav-item.is-active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-toggle {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Card styling for content blocks */
+.doc .sect1, .doc .sect2, .doc .sect3 {
+    background: var(--card-background);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+.doc .sect1:before, .doc .sect2:before, .doc .sect3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: var(--header-gradient);
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--border-color);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.doc table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: var(--card-background);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.doc table th {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+}
+
+.doc table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.doc table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Code blocks */
+.doc pre {
+    background-color: #2c2a28;
+    color: #f5f2eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.breadcrumbs a {
+    color: var(--primary-color);
+}
+
+.breadcrumbs a:hover {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.pagination-item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--card-background);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+}
+
+.pagination-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* TOC */
+.toc {
+    background-color: var(--card-background);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+}
+
+.toc .toc-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .doc {
+        padding: 1rem;
+    }
+    
+    h1.page {
+        font-size: 2rem;
+    }
+}

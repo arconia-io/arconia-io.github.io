@@ -1,0 +1,256 @@
+:root {
+    --primary-color: #9c8f7f;
+    --secondary-color: #5d5a56;
+    --text-color: #2c2a28;
+    --background-color: #e8e4dc;
+    --card-background: #f5f2eb;
+    --card-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --header-gradient: linear-gradient(135deg, #9c8f7f 0%, #5d5a56 100%);
+    --border-color: #c5bdb3;
+    --arch-color: #5d5a56;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.arch-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.arch {
+    position: relative;
+    width: 90vw;
+    max-width: 1200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 20px solid var(--arch-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.15;
+}
+
+.arch-inner {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border-radius: 50%;
+    border: 2px solid var(--arch-color);
+}
+
+header {
+    text-align: center;
+    padding: 8rem 1rem;
+    background: var(--header-gradient);
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 3rem;
+}
+
+.logo-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--card-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--border-color);
+    overflow: hidden;
+}
+
+.logo-frame:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.logo {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-background);
+    border-radius: 0.75rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.project-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: var(--header-gradient);
+    border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.icon {
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    transform: scale(1.2);
+    background: rgba(156, 143, 127, 0.1);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.project-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.project-card h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.project-card p {
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--border-color);
+    text-transform: uppercase;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .arch {
+        width: 150vw;
+        opacity: 0.1;
+    }
+}
