@@ -1,0 +1,21 @@
+site:
+  title: Arconia
+
+content:
+  sources:
+  - url: https://github.com/arconia-io/arconia.git
+    branches: main
+    start_path: docs
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+  supplemental_files: ./supplemental-ui
+
+urls:
+  latest_version_segment: latest
+  html_extension_style: indexify
+
+output:
+  clean: true
+  dir: ./build/website/docs

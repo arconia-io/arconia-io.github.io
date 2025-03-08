@@ -4,7 +4,9 @@
   "description": "Arconia documentation website",
   "scripts": {
     "build:docs": "antora antora-playbook.yml --fetch",
+    "build:docs-local": "antora local-antora-playbook.yml --fetch",
     "build:site": "cp -r landing/* build/website/",
+    "dev": "npm run clean && npm run build:docs-local && npm run build:site && npm run open",
     "build": "npm run clean && npm run build:docs && npm run build:site",
     "open": "open build/website/index.html",
     "clean": "rm -rf build"
