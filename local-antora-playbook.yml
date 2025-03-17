@@ -15,6 +15,14 @@ content:
     - '!v0.5.*'
     - '!v0.6.*'
     - 'early-access'
+  - url: https://github.com/arconia-io/arconia-cli.git
+    branches: ~
+    start_path: docs
+    tags:
+    - v*
+    - '!v0.0.*'
+    - '!v0.1.0'
+    - 'early-access'
 
 ui:
   bundle:
