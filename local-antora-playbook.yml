@@ -3,33 +3,12 @@ site:
 
 content:
   sources:
-  - url: https://github.com/arconia-io/arconia.git
+  - url: ../arconia
     branches: main
     start_path: docs
-    tags:
-    - v*
-    - '!v0.0.*'
-    - '!v0.1.*'
-    - '!v0.2.*'
-    - '!v0.3.*'
-    - '!v0.5.*'
-    - '!v0.6.*'
-    - '!v0.7.*'
-    - '!v0.9.0'
-    - '!v0.9.1'
-    - '!v0.10.0'
-    - 'early-access'
-  - url: https://github.com/arconia-io/arconia-cli.git
-    branches: ~
+  - url: ../arconia-cli
+    branches: main
     start_path: docs
-    tags:
-    - v*
-    - '!v0.0.*'
-    - '!v0.1.0'
-    - '!v0.1.1'
-    - '!v0.1.2'
-    - '!v0.2.0'
-    - 'early-access'
 
 ui:
   bundle:
@@ -43,3 +22,7 @@ urls:
 output:
   clean: true
   dir: ./build/website/docs
+
+asciidoc:
+  extensions:
+    - '@asciidoctor/tabs'
