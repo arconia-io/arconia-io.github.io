@@ -20,7 +20,7 @@ content:
     - '!v0.10.0'
     - '!v0.10.1'
     - '!v0.10.2'
-    - '!v0.14.1'
+    - '!v0.14.0'
   - url: https://github.com/arconia-io/arconia-cli.git
     branches: ~
     start_path: docs
