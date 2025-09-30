@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "antora": "3.1.13",
-    "serve": "^14.2.1"
+    "serve": "^14.2.5"
   },
   "dependencies": {
     "@asciidoctor/tabs": "^1.0.0-beta.6"
