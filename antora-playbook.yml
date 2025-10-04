@@ -1,7 +1,7 @@
 site:
   title: Arconia
   url: http://localhost:9090
-  start_page: arconia::index.adoc
+  #start_page: arconia::index.adoc
   robots: allow
 
 content:
