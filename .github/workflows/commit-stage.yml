@@ -1,9 +1,9 @@
-name: Publish to GitHub Pages
+name: Commit Stage
 on:
   push:
     branches: [main]
   repository_dispatch:
-    types: [docs-update]
+    types: [website-update]
   workflow_dispatch:
 
 concurrency:
@@ -27,15 +27,13 @@ jobs:
     - name: Configure Pages
       uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
     - name: Install devbox
-      uses: jetify-com/devbox-install-action@v0.12.0
+      uses: jetify-com/devbox-install-action@a0d2d53632934ae004f878c840055956d9f741b0 # v0.14.0
     - name: Build Website
-      run: devbox run -- task build-redirect
-      env:
-        ANTORA_SITE_URL: https://arconia.io/docs
+      run: devbox run -- task build
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
       with:
-        path: build/website
+        path: build/site
         retention-days: 1
     - name: Deploy to GitHub Pages
       id: deployment
