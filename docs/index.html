@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex">
+    <title>Redirecting to docs.arconia.io…</title>
+
+    <!-- Instant meta refresh fallback -->
+    <meta http-equiv="refresh" content="0; url=https://docs.arconia.io/" />
+
+    <script>
+      (function() {
+        // Capture the current URL path after /docs/
+        const oldPath = window.location.pathname.replace(/^\/docs/, "");
+        // Preserve query parameters and hash
+        const search = window.location.search || "";
+        const hash = window.location.hash || "";
+
+        // Build the new URL
+        const newUrl = "https://docs.arconia.io" + oldPath + search + hash;
+
+        // Redirect instantly
+        window.location.replace(newUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>
+        Redirecting to <a href="https://docs.arconia.io/">docs.arconia.io</a>…
+      </p>
+    </noscript>
+  </body>
+</html>

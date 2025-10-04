@@ -32,6 +32,13 @@ tasks:
       - npm ci
       - npx antora antora-playbook.yml --fetch --url ${ANTORA_SITE_URL}
       - cp -r landing/* build/website/
+  
+  build-redirect:
+    desc: Build documentation for production as a static website.
+    cmds:
+      - mkdir -p build/website
+      - cp -r landing/* build/website/
+      - cp -r docs build/website/
 
   build-oci:
     desc: Build documentation for production as a static website served by NGINX.
