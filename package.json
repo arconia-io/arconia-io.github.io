@@ -1,21 +1,11 @@
 {
-  "name": "arconia-website",
+  "name": "arconia-docs",
   "version": "1.0.0",
-  "description": "Arconia documentation website",
-  "scripts": {
-    "build:docs": "antora antora-playbook.yml --fetch",
-    "build:docs-local": "antora local-antora-playbook.yml --fetch",
-    "build:site": "cp -r landing/* build/website/",
-    "dev": "npm run clean && npm run build:docs-local && npm run build:site && npm run open",
-    "build": "npm run clean && npm run build:docs && npm run build:site",
-    "open": "open build/website/index.html",
-    "clean": "rm -rf build"
-  },
+  "description": "Arconia documentation",
   "devDependencies": {
+    "@antora/lunr-extension": "1.0.0-alpha.10",
+    "@asciidoctor/tabs": "1.0.0-beta.6",
     "antora": "3.1.13",
-    "serve": "^14.2.5"
-  },
-  "dependencies": {
-    "@asciidoctor/tabs": "^1.0.0-beta.6"
+    "http-server": "14.1.1"
   }
 }
