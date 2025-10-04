@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex">
+    <title>Page moved</title>
+    <script>
+      (function () {
+        var path = window.location.pathname || "/";
+        var isDocs = path === "/docs" || path.startsWith("/docs/");
+
+        if (isDocs) {
+          // Preserve everything after /docs
+          var rest = path.replace(/^\/docs/, "");
+          var target = "https://docs.arconia.io" + rest + (window.location.search || "") + (window.location.hash || "");
+          // Use replace() so the old URL doesn't remain in history
+          window.location.replace(target);
+          return;
+        }
+
+        // Otherwise, fall through to your normal 404 UI
+      })();
+    </script>
+  </head>
+  <body>
+    <h1>Page moved</h1>
+    <p>If you are not redirected automatically, your browser may have scripts disabled.</p>
+    <p>
+      Documentation is now at
+      <a href="https://docs.arconia.io/">https://docs.arconia.io/</a>.
+    </p>
+  </body>
+</html>
