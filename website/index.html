@@ -3,84 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arconia</title>
+    <title>Arconia - Spring Boot, Supercharged</title>
+    <meta name="description" content="An open-source toolkit that extends Spring Boot from development to production, with a superior developer experience.">
+    <meta property="og:title" content="Arconia - Spring Boot, Supercharged">
+    <meta property="og:description" content="An open-source toolkit that extends Spring Boot from development to production, with a superior developer experience.">
+    <meta property="og:image" content="https://arconia.io/arconia-blue-horizontal.png">
+    <meta property="og:url" content="https://arconia.io">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="arc-blue.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
     <script defer data-domain="arconia.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
-    <div class="arch-container">
-        <div class="arch">
-            <div class="arch-inner"></div>
-        </div>
-    </div>
-    
-    <header>
-        <div class="logo-container">
-            <div class="logo-frame">
-                <img src="arconia-logo.png" alt="Arconia Logo" class="logo">
-            </div>
-        </div>
-        <h1>Arconia</h1>
-        <p>Frameworks and tools for building cloud native software systems in Java with a superior developer experience.</p>
-    </header>
-    
-    <main>
-        <div class="projects">
-            <div class="project-card">
-                <div class="icon">
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Terminal window for CLI -->
-                        <rect x="8" y="12" width="48" height="40" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
-                        <path d="M8 22H56" stroke="currentColor" stroke-width="2"/>
-                        <circle cx="14" cy="17" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                        <circle cx="22" cy="17" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                        <circle cx="30" cy="17" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                        <path d="M16 32L24 40L16 48" stroke="currentColor" stroke-width="2"/>
-                        <path d="M28 44H44" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                </div>
-                <div class="card-content">
-                    <h2>Arconia CLI</h2>
-                    <p>A powerful tool designed to streamline and enhance the developer experience when working with Java and Spring Boot applications.</p>
-                    <a href="https://docs.arconia.io/arconia-cli/latest/index.html" class="button">Learn More</a>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="icon">
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Majestic palace/building icon -->
-                        <!-- Building base -->
-                        <rect x="12" y="36" width="40" height="20" stroke="currentColor" stroke-width="2" fill="none"/>
-                        <!-- Columns -->
-                        <line x1="20" y1="36" x2="20" y2="56" stroke="currentColor" stroke-width="1.5"/>
-                        <line x1="32" y1="36" x2="32" y2="56" stroke="currentColor" stroke-width="1.5"/>
-                        <line x1="44" y1="36" x2="44" y2="56" stroke="currentColor" stroke-width="1.5"/>
-                        <!-- Entrance arch -->
-                        <path d="M26 56V46C26 43.7909 27.7909 42 30 42H34C36.2091 42 38 43.7909 38 46V56" stroke="currentColor" stroke-width="1.5"/>
-                        <!-- Upper structure -->
-                        <rect x="16" y="28" width="32" height="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                        <!-- Dome/roof -->
-                        <path d="M24 28V20C24 16.6863 27.5817 14 32 14C36.4183 14 40 16.6863 40 20V28" stroke="currentColor" stroke-width="1.5"/>
-                        <path d="M32 14V8" stroke="currentColor" stroke-width="1.5"/>
-                        <circle cx="32" cy="8" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                        <!-- Windows -->
-                        <rect x="18" y="40" width="4" height="6" rx="1" stroke="currentColor" stroke-width="1" fill="none"/>
-                        <rect x="42" y="40" width="4" height="6" rx="1" stroke="currentColor" stroke-width="1" fill="none"/>
-                        <rect x="18" y="30" width="4" height="4" rx="1" stroke="currentColor" stroke-width="1" fill="none"/>
-                        <rect x="42" y="30" width="4" height="4" rx="1" stroke="currentColor" stroke-width="1" fill="none"/>
+    <!-- Nav -->
+    <nav>
+        <div class="nav-inner container">
+            <a href="/" class="nav-logo">
+                <img src="arconia-blue-horizontal.png" alt="Arconia">
+            </a>
+            <ul class="nav-links">
+                <li><a href="https://docs.arconia.io" class="nav-link-text">Docs</a></li>
+                <li><a href="https://github.com/arconia-io" class="nav-link-text">GitHub</a></li>
+                <li><a href="https://docs.arconia.io" class="btn-nav">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Spring Boot, Supercharged</h1>
+        <p>An open-source toolkit that extends Spring Boot from development to production, with a superior developer experience.</p>
+        <div class="hero-buttons">
+            <a href="https://docs.arconia.io" class="btn-primary">Get Started</a>
+            <a href="https://github.com/arconia-io" class="btn-secondary">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="section-header">
+            <h2>The Arconia Ecosystem</h2>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.5 10-10 10z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
                     </svg>
                 </div>
-                <div class="card-content">
-                    <h2>Arconia Framework</h2>
-                    <p>A framework built on top of Java and Spring Boot that helps developers build modern cloud native applications with developer experience in mind.</p>
-                    <a href="https://docs.arconia.io/arconia/latest/index.html" class="button">Learn More</a>
+                <h3>Arconia Framework</h3>
+                <p>An open-source Spring Boot add-on with modules for dev services, observability, multitenancy, Kubernetes, and AI.</p>
+                <a href="https://docs.arconia.io/arconia/latest/index.html" class="card-link">
+                    Learn more
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="4 17 10 11 4 5"/>
+                        <line x1="12" y1="19" x2="20" y2="19"/>
+                    </svg>
+                </div>
+                <h3>Arconia CLI</h3>
+                <p>A build-tool-agnostic CLI for the full development lifecycle. Create, develop, build, test, and update Spring Boot applications with a single tool.</p>
+                <a href="https://docs.arconia.io/arconia-cli/latest/index.html" class="card-link">
+                    Learn more
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+            <div class="product-card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                        <path d="M3 3v5h5"/>
+                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+                        <path d="M16 16h5v5"/>
+                    </svg>
+                </div>
+                <h3>Arconia Migrations</h3>
+                <p>OpenRewrite recipes for automated upgrades of Spring Boot, Spring AI, and more. One command to handle API changes, dependency bumps, and code refactoring.</p>
+                <a href="https://github.com/arconia-io/arconia-migrations" class="card-link">
+                    Learn more
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="section-header">
+            <h2>Built for Modern Java Development</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="card-icon">
+                    <!-- Rocket / DX icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                    </svg>
+                </div>
+                <h3>Zero-Config Developer Experience</h3>
+                <p>Dev Services auto-provision databases, message brokers, and AI services as containers. One dependency, no boilerplate. A Dev UI for inspecting your running application, and a CLI that streamlines your entire development lifecycle.</p>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">
+                    <!-- Observability icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </div>
+                <h3>Unified Observability</h3>
+                <p>OpenTelemetry and Micrometer in a single dependency. Logs, metrics, and traces with OpenTelemetry and OpenInference semantic conventions out of the box. Auto-provisioned Grafana stack for local development.</p>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">
+                    <!-- Multitenancy icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="8" height="14" rx="1"/>
+                        <rect x="14" y="3" width="8" height="18" rx="1"/>
+                        <path d="M6 11h0"/>
+                        <path d="M6 15h0"/>
+                        <path d="M18 7h0"/>
+                        <path d="M18 11h0"/>
+                        <path d="M18 15h0"/>
+                    </svg>
+                </div>
+                <h3>Built-in Multitenancy</h3>
+                <p>First-class multitenancy for enterprise SaaS applications. Flexible tenant resolution from HTTP headers and cookies, context propagation, tenant-aware caching, and built-in observability with MDC logging and OpenTelemetry integration.</p>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">
+                    <!-- AI icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.288L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.288z"/>
+                    </svg>
+                </div>
+                <h3>Generative AI Ready</h3>
+                <p>Integrated AI observability and evaluation platforms, document processing with Docling, and skills management to package, distribute, and install agent skills.</p>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">
+                    <!-- Migrations icon -->
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                        <path d="M3 3v5h5"/>
+                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+                        <path d="M16 16h5v5"/>
+                    </svg>
+                </div>
+                <h3>Automated Migrations</h3>
+                <p>One-command upgrades for Spring Boot 4, Spring AI 2, and beyond. OpenRewrite recipes handle API changes, dependency bumps, and code refactoring automatically.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="arconia-white-horizontal.png" alt="Arconia">
+                <p>Spring Boot, supercharged.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://docs.arconia.io">Documentation</a></li>
+                        <li><a href="https://github.com/arconia-io">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><a href="https://docs.arconia.io/arconia/latest/index.html">Arconia Framework</a></li>
+                        <li><a href="https://docs.arconia.io/arconia-cli/latest/index.html">Arconia CLI</a></li>
+                        <li><a href="https://github.com/arconia-io/arconia-migrations">Arconia Migrations</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </main>
+        <div class="footer-bottom">
+            <p>&copy; 2025-2026 Arconia. All rights reserved.</p>
+            <p>Made with ❤️ in Europe by <a href="https://www.thomasvitale.com">Thomas Vitale</a></p>
+        </div>
+    </footer>
+
 </body>
 </html>
