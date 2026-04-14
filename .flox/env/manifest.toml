@@ -1,0 +1,24 @@
+schema-version = "1.11.0"
+
+[install]
+go-task.pkg-path = "go-task"
+
+[vars]
+FLOX_DISABLE_METRICS = "true"
+
+[hook]
+
+[profile]
+
+[services]
+
+[include]
+
+[build]
+
+[options]
+systems = [
+  "aarch64-darwin",
+  "aarch64-linux",
+  "x86_64-linux",
+]
