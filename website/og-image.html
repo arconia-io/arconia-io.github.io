@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Arconia — OG image source</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-blue: #005ED9;
+            --dark-blue: #001545;
+            --light-blue: #C1F1FF;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 1200px;
+            height: 630px;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: 'League Spartan', sans-serif;
+            color: var(--white);
+            background:
+                radial-gradient(circle at 82% 12%, rgba(180, 125, 255, 0.22), transparent 55%),
+                linear-gradient(160deg, var(--main-blue) 0%, var(--dark-blue) 100%);
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            right: -160px;
+            transform: translateY(-50%);
+            width: 760px;
+            height: 760px;
+            background: url('arc-white.png') no-repeat center / contain;
+            opacity: 0.07;
+            pointer-events: none;
+        }
+
+        .frame {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            padding: 72px 84px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .top img {
+            height: 42px;
+            display: block;
+        }
+
+        .top .name {
+            font-weight: 700;
+            font-size: 32px;
+            letter-spacing: -0.01em;
+            line-height: 1;
+        }
+
+        .middle h1 {
+            font-weight: 700;
+            font-size: 96px;
+            letter-spacing: -0.03em;
+            line-height: 0.98;
+            color: var(--white);
+            margin: 0;
+        }
+
+        .middle .capabilities {
+            margin-top: 28px;
+            font-weight: 500;
+            font-size: 26px;
+            letter-spacing: 0.01em;
+            color: var(--light-blue);
+            opacity: 0.88;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--light-blue);
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            padding: 10px 22px 8px;
+            border: 1px solid rgba(193, 241, 255, 0.32);
+            border-radius: 999px;
+            background: rgba(193, 241, 255, 0.06);
+            line-height: 1;
+        }
+
+        .url {
+            font-family: 'JetBrains Mono', ui-monospace, monospace;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--light-blue);
+            opacity: 0.72;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark"></div>
+    <div class="frame">
+        <div class="top">
+            <img src="arc-white.png" alt="">
+            <span class="name">Arconia</span>
+        </div>
+        <div class="middle">
+            <h1>Boosting Spring Boot</h1>
+            <p class="capabilities">Dev Services · Observability · GenAI · Cloud Native</p>
+        </div>
+        <div class="bottom">
+            <span class="badge">Open Source · Apache 2.0</span>
+            <span class="url">arconia.io</span>
+        </div>
+    </div>
+</body>
+</html>

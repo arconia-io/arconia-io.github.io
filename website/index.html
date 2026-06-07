@@ -3,22 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arconia - Spring Boot, Supercharged</title>
-    <meta name="description" content="An open-source toolkit that extends Spring Boot from development to production, with a superior developer experience.">
-    <meta property="og:title" content="Arconia - Spring Boot, Supercharged">
-    <meta property="og:description" content="An open-source toolkit that extends Spring Boot from development to production, with a superior developer experience.">
-    <meta property="og:image" content="https://arconia.io/arconia-blue-horizontal.png">
+    <title>Arconia — Boosting Spring Boot</title>
+    <meta name="description" content="Arconia is a modular toolkit for Spring Boot. Dev services, observability, GenAI, cloud-native tooling. Add only the modules you need for a great developer experience.">
+    <meta property="og:title" content="Arconia — Boosting Spring Boot">
+    <meta property="og:description" content="Arconia is a modular toolkit for Spring Boot. Dev services, observability, GenAI, cloud-native tooling. Add only the modules you need for a great developer experience.">
+    <meta property="og:image" content="https://arconia.io/arconia-og-image.png">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1260">
+    <meta property="og:image:alt" content="Arconia — Boosting Spring Boot. Dev Services, Observability, GenAI, Cloud Native.">
     <meta property="og:url" content="https://arconia.io">
     <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arconia — Boosting Spring Boot">
+    <meta name="twitter:description" content="Arconia is a modular toolkit for Spring Boot. Dev services, observability, GenAI, cloud-native tooling. Add only the modules you need for a great developer experience.">
+    <meta name="twitter:image" content="https://arconia.io/arconia-og-image.png">
+    <meta name="theme-color" content="#005ED9">
+    <link rel="canonical" href="https://arconia.io/">
     <link rel="icon" href="arc-blue.png" type="image/png">
+    <link rel="apple-touch-icon" href="arc-blue.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script defer data-domain="arconia.io" src="https://plausible.io/js/script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Arconia",
+      "description": "Arconia is a modular toolkit for Spring Boot. Dev services, observability, GenAI, cloud-native tooling. Add only the modules you need for a great developer experience.",
+      "url": "https://arconia.io",
+      "image": "https://arconia.io/arconia-og-image.png",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cross-platform",
+      "programmingLanguage": "Java",
+      "softwareRequirements": "Java 21+, Spring Boot 4+",
+      "license": "https://www.apache.org/licenses/LICENSE-2.0",
+      "codeRepository": "https://github.com/arconia-io",
+      "isAccessibleForFree": true,
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Vitale",
+        "url": "https://www.thomasvitale.com"
+      }
+    }
+    </script>
 </head>
 <body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
 
     <!-- Nav -->
     <nav>
@@ -27,26 +62,155 @@
                 <img src="arconia-blue-horizontal.png" alt="Arconia">
             </a>
             <ul class="nav-links">
-                <li><a href="https://docs.arconia.io" class="nav-link-text">Docs</a></li>
-                <li><a href="https://github.com/arconia-io" class="nav-link-text">GitHub</a></li>
-                <li><a href="https://docs.arconia.io" class="btn-nav">Get Started</a></li>
+                <li><a href="https://github.com/arconia-io" class="nav-icon" aria-label="Arconia on GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.111.82-.261.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a></li>
+                <li><a href="https://bsky.app/profile/arconia.io" class="nav-icon" aria-label="Arconia on Bluesky">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                    </svg>
+                </a></li>
+                <li><a href="https://docs.arconia.io" class="btn-nav">Docs</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="hero">
-        <h1>Spring Boot, Supercharged</h1>
-        <p>An open-source toolkit that extends Spring Boot from development to production, with a superior developer experience.</p>
+    <section class="hero" id="main">
+        <span class="hero-eyebrow">Open Source · Apache 2.0</span>
+        <h1>Boosting Spring Boot</h1>
+        <p>Arconia is a modular toolkit for Spring Boot. Dev services, observability, GenAI, cloud-native tooling. Add only the modules you need for a great developer experience.</p>
         <div class="hero-buttons">
-            <a href="https://docs.arconia.io" class="btn-primary">Get Started</a>
-            <a href="https://github.com/arconia-io" class="btn-secondary">View on GitHub</a>
+            <a href="https://docs.arconia.io/arconia/latest/getting-started/" class="btn-primary">Get Started</a>
+            <a href="https://github.com/arconia-io" class="btn-secondary">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.111.82-.261.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+                View on GitHub
+            </a>
+        </div>
+        <ul class="hero-compat" role="list">
+            <li>Java 21+</li>
+            <li>Spring Boot 4+</li>
+        </ul>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="section-header">
+            <span class="section-eyebrow">Capabilities</span>
+            <h2>Built for Modern Java Development</h2>
+        </div>
+        <div class="features-stack">
+            <article class="feature-row">
+                <div class="feature-row-text">
+                    <div class="card-icon">
+                        <!-- Rocket / DX icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                        </svg>
+                    </div>
+                    <h3>Zero-Code Dev Services</h3>
+                    <p>Add one dependency. Run your app. Arconia auto-provisions and wires a containerized PostgreSQL, Grafana, Kafka, Redis, Ollama — and 20+ other services — with zero code and zero configuration.</p>
+                </div>
+                <div class="feature-row-media">
+                    <div class="snippet snippet-code" data-label="build.gradle">
+                        <pre><code class="language-gradle">testAndDevelopmentOnly 'io.arconia:arconia-dev-services-postgresql'</code></pre>
+                    </div>
+                    <div class="snippet snippet-shell" data-label="Terminal">
+                        <pre><code class="language-sh"><span class="prompt">$</span> ./gradlew bootRun</code></pre>
+                    </div>
+                </div>
+            </article>
+            <article class="feature-row">
+                <div class="feature-row-text">
+                    <div class="card-icon">
+                        <!-- Observability icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3>Unified Observability with OpenTelemetry</h3>
+                    <p>One dependency. Logs, metrics, and traces. Instrumented and exported via OTLP. Built on Spring's Micrometer observability foundation.</p>
+                </div>
+                <div class="feature-row-media">
+                    <div class="snippet snippet-code" data-label="build.gradle">
+                        <pre><code class="language-gradle">implementation 'io.arconia:arconia-opentelemetry-spring-boot-starter'</code></pre>
+                    </div>
+                </div>
+            </article>
+            <article class="feature-row">
+                <div class="feature-row-text">
+                    <div class="card-icon">
+                        <!-- AI icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.288L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.288z"/>
+                        </svg>
+                    </div>
+                    <h3>First-Class GenAI Observability</h3>
+                    <p>OpenTelemetry GenAI semantic conventions for Spring AI apps. Switch flavours — OpenLit, OpenLLMetry, or LangSmith — with one line of config.</p>
+                </div>
+                <div class="feature-row-media">
+                    <div class="snippet snippet-code" data-label="application.yml">
+                        <pre><code class="language-yaml"><span class="comment"># Flavor: opentelemetry | openlit | openllmetry | langsmith</span>
+arconia.observations.conventions.opentelemetry.ai.flavor: openlit</code></pre>
+                    </div>
+                </div>
+            </article>
+            <article class="feature-row">
+                <div class="feature-row-text">
+                    <div class="card-icon">
+                        <!-- CLI / terminal icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5"/>
+                            <line x1="12" y1="19" x2="20" y2="19"/>
+                        </svg>
+                    </div>
+                    <h3>One CLI for the Whole Lifecycle</h3>
+                    <p>Create, run, test, and build Spring Boot apps with a single tool, Gradle or Maven, any OS. Install via <code>brew install arconia-io/tap/arconia-cli</code>.</p>
+                </div>
+                <div class="feature-row-media">
+                    <div class="snippet snippet-shell" data-label="Terminal">
+                        <pre><code class="language-sh"><span class="prompt">$</span> arconia create
+<span class="prompt">$</span> arconia dev
+<span class="prompt">$</span> arconia test
+<span class="prompt">$</span> arconia build</code></pre>
+                    </div>
+                </div>
+            </article>
+            <article class="feature-row">
+                <div class="feature-row-text">
+                    <div class="card-icon">
+                        <!-- Migrations icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                            <path d="M3 3v5h5"/>
+                            <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
+                            <path d="M16 16h5v5"/>
+                        </svg>
+                    </div>
+                    <h3>One-Command Version Upgrades</h3>
+                    <p>Curated OpenRewrite recipes for Spring Boot, Spring AI, Spring Cloud, JUnit, Testcontainers, and Arconia itself. Bundled with the CLI, no setup required.</p>
+                </div>
+                <div class="feature-row-media">
+                    <div class="snippet snippet-shell" data-label="Terminal">
+                        <pre><code class="language-sh"><span class="prompt">$</span> arconia update spring-boot --to-version 4.0
+<span class="prompt">$</span> arconia update spring-ai --to-version 2.0</code></pre>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
     <!-- Products -->
     <section class="products">
         <div class="section-header">
+            <span class="section-eyebrow">Projects</span>
             <h2>The Arconia Ecosystem</h2>
         </div>
         <div class="products-grid">
@@ -58,7 +222,7 @@
                     </svg>
                 </div>
                 <h3>Arconia Framework</h3>
-                <p>An open-source Spring Boot add-on with modules for dev services, observability, multitenancy, Kubernetes, and AI.</p>
+                <p>The modular Spring Boot add-on at the core of Arconia.</p>
                 <a href="https://docs.arconia.io/arconia/latest/index.html" class="card-link">
                     Learn more
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -72,7 +236,7 @@
                     </svg>
                 </div>
                 <h3>Arconia CLI</h3>
-                <p>A build-tool-agnostic CLI for the full development lifecycle. Create, develop, build, test, and update Spring Boot applications with a single tool.</p>
+                <p>Build-tool-agnostic CLI for the full Spring Boot dev lifecycle.</p>
                 <a href="https://docs.arconia.io/arconia-cli/latest/index.html" class="card-link">
                     Learn more
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -88,82 +252,11 @@
                     </svg>
                 </div>
                 <h3>Arconia Migrations</h3>
-                <p>OpenRewrite recipes for automated upgrades of Spring Boot, Spring AI, and more. One command to handle API changes, dependency bumps, and code refactoring.</p>
-                <a href="https://github.com/arconia-io/arconia-migrations" class="card-link">
+                <p>OpenRewrite recipes for upgrading Spring Boot, Spring AI, and more.</p>
+                <a href="https://docs.arconia.io/arconia-migrations/latest/index.html" class="card-link">
                     Learn more
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="section-header">
-            <h2>Built for Modern Java Development</h2>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="card-icon">
-                    <!-- Rocket / DX icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-                    </svg>
-                </div>
-                <h3>Zero-Config Developer Experience</h3>
-                <p>Dev Services auto-provision databases, message brokers, and AI services as containers. One dependency, no boilerplate. A Dev UI for inspecting your running application, and a CLI that streamlines your entire development lifecycle.</p>
-            </div>
-            <div class="feature-card">
-                <div class="card-icon">
-                    <!-- Observability icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
-                </div>
-                <h3>Unified Observability</h3>
-                <p>OpenTelemetry and Micrometer in a single dependency. Logs, metrics, and traces with OpenTelemetry and OpenInference semantic conventions out of the box. Auto-provisioned Grafana stack for local development.</p>
-            </div>
-            <div class="feature-card">
-                <div class="card-icon">
-                    <!-- Multitenancy icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="7" width="8" height="14" rx="1"/>
-                        <rect x="14" y="3" width="8" height="18" rx="1"/>
-                        <path d="M6 11h0"/>
-                        <path d="M6 15h0"/>
-                        <path d="M18 7h0"/>
-                        <path d="M18 11h0"/>
-                        <path d="M18 15h0"/>
-                    </svg>
-                </div>
-                <h3>Built-in Multitenancy</h3>
-                <p>First-class multitenancy for enterprise SaaS applications. Flexible tenant resolution from HTTP headers and cookies, context propagation, tenant-aware caching, and built-in observability with MDC logging and OpenTelemetry integration.</p>
-            </div>
-            <div class="feature-card">
-                <div class="card-icon">
-                    <!-- AI icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.288L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.288z"/>
-                    </svg>
-                </div>
-                <h3>Generative AI Ready</h3>
-                <p>Integrated AI observability and evaluation platforms, document processing with Docling, and skills management to package, distribute, and install agent skills.</p>
-            </div>
-            <div class="feature-card">
-                <div class="card-icon">
-                    <!-- Migrations icon -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
-                        <path d="M3 3v5h5"/>
-                        <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/>
-                        <path d="M16 16h5v5"/>
-                    </svg>
-                </div>
-                <h3>Automated Migrations</h3>
-                <p>One-command upgrades for Spring Boot 4, Spring AI 2, and beyond. OpenRewrite recipes handle API changes, dependency bumps, and code refactoring automatically.</p>
             </div>
         </div>
     </section>
@@ -173,7 +266,8 @@
         <div class="footer-inner">
             <div class="footer-brand">
                 <img src="arconia-white-horizontal.png" alt="Arconia">
-                <p>Spring Boot, supercharged.</p>
+                <p class="footer-tagline">Boosting Spring Boot</p>
+                <p class="footer-description">An open-source toolkit for the apps you build, and the ones you already have.</p>
             </div>
             <div class="footer-links">
                 <div class="footer-col">
@@ -188,14 +282,21 @@
                     <ul>
                         <li><a href="https://docs.arconia.io/arconia/latest/index.html">Arconia Framework</a></li>
                         <li><a href="https://docs.arconia.io/arconia-cli/latest/index.html">Arconia CLI</a></li>
-                        <li><a href="https://github.com/arconia-io/arconia-migrations">Arconia Migrations</a></li>
+                        <li><a href="https://docs.arconia.io/arconia-migrations/latest/index.html">Arconia Migrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://github.com/arconia-io/arconia/discussions">Discussions</a></li>
+                        <li><a href="https://bsky.app/profile/arconia.io">Bluesky</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025-2026 Arconia. All rights reserved.</p>
-            <p>Made with ❤️ in Europe by <a href="https://www.thomasvitale.com">Thomas Vitale</a></p>
+            <p>Made with ❤️ in Europe by <a href="https://www.thomasvitale.com">Thomas Vitale</a>, with contributions from the <a href="https://github.com/arconia-io">open-source community</a>.</p>
         </div>
     </footer>
 
