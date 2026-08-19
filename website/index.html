@@ -146,6 +146,35 @@
             <article class="feature-row">
                 <div class="feature-row-text">
                     <div class="card-icon">
+                        <!-- Multitenancy / buildings icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                            <path d="M10 6h4"/>
+                            <path d="M10 10h4"/>
+                            <path d="M10 14h4"/>
+                            <path d="M10 18h4"/>
+                        </svg>
+                    </div>
+                    <h3>Multitenancy Without the Boilerplate</h3>
+                    <p>Resolve the tenant from each request, propagate it through the call stack with scoped values, and isolate data per tenant. Declare your tenants in configuration. Logs, metrics, and traces are enriched automatically.</p>
+                </div>
+                <div class="feature-row-media">
+                    <div class="snippet snippet-code" data-label="application.yml">
+                        <pre><code class="language-yaml">arconia:
+  multitenancy:
+    details:
+      tenants:
+        - identifier: dukes
+        - identifier: beans
+        - identifier: pixie</code></pre>
+                    </div>
+                </div>
+            </article>
+            <article class="feature-row">
+                <div class="feature-row-text">
+                    <div class="card-icon">
                         <!-- AI icon -->
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.288L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.288z"/>
@@ -198,7 +227,7 @@ arconia.observations.conventions.opentelemetry.ai.flavor: openlit</code></pre>
                 </div>
                 <div class="feature-row-media">
                     <div class="snippet snippet-shell" data-label="Terminal">
-                        <pre><code class="language-sh"><span class="prompt">$</span> arconia update spring-boot --to-version 4.0
+                        <pre><code class="language-sh"><span class="prompt">$</span> arconia update spring-boot --to-version 4.1
 <span class="prompt">$</span> arconia update spring-ai --to-version 2.0</code></pre>
                     </div>
                 </div>
